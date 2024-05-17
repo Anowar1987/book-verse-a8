@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const navItems = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/listedbook'>Listed Books</Link></li>
-        <li><Link to='/pagestoread'>Pages to Read</Link></li>
+        <li className="border-[#23BE0A] rounded-lg text-xl font-semibold text-[#23BE0A]"><Link to='/'>Home</Link></li>
+        <li className="text-xl text-[#131313cc]"><Link to='/listedbook'>Listed Books</Link></li>
+        <li className="text-xl text-[#131313cc]"><Link to='/pagestoread'>Pages to Read</Link></li>
     </>
 
     return (
@@ -19,7 +19,7 @@ const NavBar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Book Verse</a>
+                <a className="btn btn-ghost text-3xl font-bold">Book Verse</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -27,8 +27,8 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Sign In</a>
-                <a className="btn">Sign Up</a>
+                <a className="btn bg-[#23BE0A] rounded-xl text-white px-4">Sign In</a>
+                <a className="btn bg-[#59C6D2] rounded-xl text-white px-4">Sign Up</a>
             </div>
         </div>
     );
