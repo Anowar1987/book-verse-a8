@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     const navItems = <>
         <li className="border-[#23BE0A] rounded-lg text-xl font-semibold text-[#23BE0A]"><Link to='/'>Home</Link></li>
-        <li className="text-xl text-[#131313cc]"><Link to='/listedbook'>Listed Books</Link></li>
+        <li className="text-[#131313cc] border-[#23BE0A] rounded-lg text-xl font-semibold text-[#23BE0A]"><Link to='/listedbooks'>Listed Books</Link></li>
         <li className="text-xl text-[#131313cc]"><Link to='/pagestoread'>Pages to Read</Link></li>
     </>
 
